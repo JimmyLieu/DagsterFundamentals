@@ -1,0 +1,8 @@
+[32m2025-04-08 13:17:46 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 972243b4-75f4-4687-b75f-2606b0355114 - 43562 - LOGS_CAPTURED - Started capturing logs in process (pid: 43562).
+[32m2025-04-08 13:17:46 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 972243b4-75f4-4687-b75f-2606b0355114 - 43562 - my_second_asset - STEP_START - Started execution of step "my_second_asset".
+[32m2025-04-08 13:17:46 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - 972243b4-75f4-4687-b75f-2606b0355114 - my_second_asset - Output data is [4, 5, 6]
+[32m2025-04-08 13:17:46 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 972243b4-75f4-4687-b75f-2606b0355114 - 43562 - my_second_asset - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2025-04-08 13:17:46 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 972243b4-75f4-4687-b75f-2606b0355114 - my_second_asset - Writing file at: /Users/jimmylieu/Coding/DagsterFundamentals/.tmp_dagster_home_sdhcp7_q/storage/my_second_asset using PickledObjectFilesystemIOManager...
+[32m2025-04-08 13:17:46 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 972243b4-75f4-4687-b75f-2606b0355114 - 43562 - my_second_asset - ASSET_MATERIALIZATION - Materialized value my_second_asset.
+[32m2025-04-08 13:17:46 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 972243b4-75f4-4687-b75f-2606b0355114 - 43562 - my_second_asset - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-04-08 13:17:46 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 972243b4-75f4-4687-b75f-2606b0355114 - 43562 - my_second_asset - STEP_SUCCESS - Finished execution of step "my_second_asset" in 30ms.

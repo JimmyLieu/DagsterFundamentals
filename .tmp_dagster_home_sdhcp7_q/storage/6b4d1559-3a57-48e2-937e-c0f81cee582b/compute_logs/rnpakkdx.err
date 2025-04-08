@@ -1,0 +1,23 @@
+[32m2025-04-08 13:28:45 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6b4d1559-3a57-48e2-937e-c0f81cee582b - 43842 - LOGS_CAPTURED - Started capturing logs in process (pid: 43842).
+[32m2025-04-08 13:28:45 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6b4d1559-3a57-48e2-937e-c0f81cee582b - 43842 - my_second_asset - STEP_START - Started execution of step "my_second_asset".
+[32m2025-04-08 13:28:45 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6b4d1559-3a57-48e2-937e-c0f81cee582b - my_second_asset - Loading file from: /Users/jimmylieu/Coding/DagsterFundamentals/.tmp_dagster_home_sdhcp7_q/storage/my_first_asset using PickledObjectFilesystemIOManager...
+[32m2025-04-08 13:28:45 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6b4d1559-3a57-48e2-937e-c0f81cee582b - 43842 - my_second_asset - LOADED_INPUT - Loaded input "upstream" using input manager "io_manager"
+[32m2025-04-08 13:28:45 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6b4d1559-3a57-48e2-937e-c0f81cee582b - 43842 - my_second_asset - STEP_INPUT - Got input "upstream" of type "[Any]". (Type check passed).
+[32m2025-04-08 13:28:45 -0500[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 6b4d1559-3a57-48e2-937e-c0f81cee582b - 43842 - my_second_asset - STEP_FAILURE - Execution of step "my_second_asset" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_second_asset"::
+
+TypeError: unsupported operand type(s) for +: 'AssetsDefinition' and 'list'
+
+Stack Trace:
+  File "/Users/jimmylieu/Coding/DagsterFundamentals/.pyenv/lib/python3.10/site-packages/dagster/_core/execution/plan/utils.py", line 56, in op_execution_error_boundary
+    yield
+  File "/Users/jimmylieu/Coding/DagsterFundamentals/.pyenv/lib/python3.10/site-packages/dagster/_utils/__init__.py", line 391, in iterate_with_context
+    next_output = next(iterator)
+  File "/Users/jimmylieu/Coding/DagsterFundamentals/.pyenv/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 127, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+  File "/Users/jimmylieu/Coding/DagsterFundamentals/.pyenv/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 115, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+  File "/Users/jimmylieu/Coding/DagsterFundamentals/hello-dagster.py", line 26, in my_second_asset
+    data = my_first_asset + [4, 5, 6]
+[0m
