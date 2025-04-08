@@ -1,0 +1,8 @@
+[32m2025-04-08 18:01:06 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fc940c89-1b65-4fbe-89bd-b9cd08abb67e - 45398 - LOGS_CAPTURED - Started capturing logs in process (pid: 45398).
+[32m2025-04-08 18:01:06 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fc940c89-1b65-4fbe-89bd-b9cd08abb67e - 45398 - my_awesome_first_asset - STEP_START - Started execution of step "my_awesome_first_asset".
+[32m2025-04-08 18:01:06 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - fc940c89-1b65-4fbe-89bd-b9cd08abb67e - my_awesome_first_asset - this is a log message.
+[32m2025-04-08 18:01:06 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fc940c89-1b65-4fbe-89bd-b9cd08abb67e - 45398 - my_awesome_first_asset - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2025-04-08 18:01:06 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fc940c89-1b65-4fbe-89bd-b9cd08abb67e - my_awesome_first_asset - Writing file at: /Users/jimmylieu/Coding/DagsterFundamentals/.tmp_dagster_home_103wpmxu/storage/my_awesome_first_asset using PickledObjectFilesystemIOManager...
+[32m2025-04-08 18:01:06 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fc940c89-1b65-4fbe-89bd-b9cd08abb67e - 45398 - my_awesome_first_asset - ASSET_MATERIALIZATION - Materialized value my_awesome_first_asset.
+[32m2025-04-08 18:01:06 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fc940c89-1b65-4fbe-89bd-b9cd08abb67e - 45398 - my_awesome_first_asset - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-04-08 18:01:06 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fc940c89-1b65-4fbe-89bd-b9cd08abb67e - 45398 - my_awesome_first_asset - STEP_SUCCESS - Finished execution of step "my_awesome_first_asset" in 34ms.
